@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,10 +27,10 @@
         <h1 class="page-ttl">Canard jaune pour la revue de code</h1>
         <section class="page-pics">
             <div class="pictures">
-                <button type="button" class="pictures-handler pictures-prev">◀️</button>
-                <img class="pictures-img" src="img/canard-jaune-1-l.png" alt="canard jaune pour dévloppeur">
-                <button type="button" class="pictures-handler pictures-next">▶️</button>
-                <ul class="thumbs">
+                <button type="button" class="pictures-handler pictures-prev" id="prev-pictures" >◀️</button>
+                <img class="pictures-img" id="mainImg" src="img/canard-jaune-1-l.png" alt="canard jaune pour dévloppeur" >
+                <button type="button" class="pictures-handler pictures-next" id="next-pictures"  >▶️</button>
+                <ul class="thumbs" id="slides-container">
                     <li class="thumbs-itm">
                         <img class="thumbs-img" src="img/canard-jaune-1-s.png" alt="canard">
                     </li>
@@ -52,7 +53,7 @@
             </div>
             <div class="add">
                 <input class="add-qty" type="text" value="1">
-                <button class="add-cta" type="button">Ajouter au panier</button>
+                <button id="myBtn" class="add-cta"  type="button">Ajouter au panier</button>
             </div>
         </section>
         <section class="page-txt page-section">
@@ -147,5 +148,7 @@
         </ul>
         <div class="footer-cp">© 2022 - Duckies4Devs</div>
     </footer>
+    <script src="Script.js"></script>
 </body>
 </html>
+
